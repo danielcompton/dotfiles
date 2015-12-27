@@ -1,4 +1,22 @@
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+source ~/.dotfiles/vim/vundle.vim
+filetype plugin indent on    " required
+
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Syntastic start
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" Syntastic end
+
+set hlsearch
