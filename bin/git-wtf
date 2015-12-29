@@ -117,7 +117,7 @@ def red s; $color ? "\033[31m#{s}\033[0m" : s end
 def green s; $color ? "\033[32m#{s}\033[0m" : s end
 def yellow s; $color ? "\033[33m#{s}\033[0m" : s end
 def cyan s; $color ? "\033[36m#{s}\033[0m" : s end
-def grey s; $color ? "\033[1;30m#{s}\033[0m" : s end
+def grey s; $color ? "\033[34;1m#{s}\033[0m" : s end # actually changed to blue to work with Solarized Dark
 def purple s; $color ? "\033[35m#{s}\033[0m" : s end
 
 ## the set of commits in 'to' that aren't in 'from'.
