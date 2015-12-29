@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+alias lessrf="less --RAW-CONTROL-CHARS -F"
+alias cutt="cut -c -$COLUMNS"
