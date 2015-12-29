@@ -1,25 +1,114 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
+tap 'caskroom/versions' # For alternate cask versions
 tap 'homebrew/bundle'
 
 brew 'ack'
+brew 'ansible'
+brew 'ant'
+brew 'awscli'
+brew 'boot-clj'
+brew 'cloc'
 brew 'coreutils'
+brew 'emacs'
+brew 'forego'
+brew 'gcc'
+brew 'git'
+brew 'git-flow-avh'
+brew 'gnupg'
+brew 'graphviz'
 brew 'grc'
-brew 'openssl'
+brew 'heroku-toolbelt'
+brew 'hub'
+brew 'jq'
+brew 'macvim'
+brew 'maven'
+brew 'mercurial'
+brew 'mitmproxy'
 brew 'node'
+brew 'openssl'
 brew 'readline'
+brew 'rethinkdb'
 brew 'roundup'
 brew 'spark'
+brew 'tcping'
+brew 'tree'
 brew 'unrar'
+brew 'vim'
+brew 'watch'
+brew 'z'
+brew 'zsh'
 
-# cask '1password'
-# cask 'adium'
-# cask 'atom'
-# cask 'firefox'
-# cask 'google-chrome'
-# cask 'handbrake'
-# cask 'slack'
-# cask 'steam'
-# cask 'transmission'
-# cask 'vlc'
+cask '1password'
+cask 'backblaze'
+cask 'backuploupe'
+cask 'bartender'
+cask 'cyberduck'
+cask 'day-o'
+cask 'firefox'
+cask 'flux'
+cask 'github-desktop'
+cask 'gitter'
+cask 'gitup'
+cask 'google-chrome'
+cask 'handbrake'
+cask 'harvest'
+cask 'hex-fiend'
+cask 'intellij-idea'
+cask 'istat-menus'
+cask 'iterm2'
+cask 'jce-unlimited-strength-policy'
+cask 'jumpcut'
+cask 'kaleidoscope'
+cask 'nvalt'
+cask 'omnidisksweeper'
+cask 'omnifocus'
+cask 'omnioutliner'
+cask 'plex-home-theater'
+cask 'plex-media-player'
+cask 'plex-media-server'
+cask 'quicksilver'
+cask 'skype'
+cask 'slack'
+cask 'spotify'
+cask 'steam'
+cask 'taskpaper'
+cask 'textmate'
+cask 'textual'
+cask 'the-unarchiver'
+cask 'transmission'
+cask 'tripmode'
+cask 'vlc'
+cask 'yourkit-java-profiler'
+cask 'xscope'
+
+# caskroom/versions
+cask 'google-chrome-canary'
+
+# To manually install from MAS
+# Boom
+# Byword
+# Caffeine
+# Calca
+# Coffitivity
+# Deckset
+# Deliveries
+# Due
+# Fantastical
+# Kindle
+# Palua
+# Piezo
+# Pixelmator
+# Pocket
+# Radia
+# ReadKit
+# Reeder
+# ScreenFloat
+# Soulver
+# Sparrow
+# Stars
+# TextWrangler
+# Textual 5
+# Tweetbot
+# Xcode
