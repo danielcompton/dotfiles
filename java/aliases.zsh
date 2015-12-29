@@ -1,0 +1,1 @@
+alias m2="$HOME/.m2/repository"
