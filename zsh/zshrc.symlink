@@ -39,3 +39,7 @@ do
 done
 
 unset config_files
+
+# TODO: something (maybe a Homebrew package?) is overwriting ZSH key commands
+# This line resets them
+# bindkey -e
