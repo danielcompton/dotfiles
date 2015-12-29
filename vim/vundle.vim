@@ -1,4 +1,3 @@
-" **** VUNDLE START ****
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -6,14 +5,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
+Plugin 'sheerun/vim-polyglot' "Language packs for Vim
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-" **** VUNDLE END ****
 
 " Brief help
 " :PluginList       - lists configured plugins

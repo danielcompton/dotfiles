@@ -3,20 +3,31 @@ filetype off                  " required
 
 source ~/.dotfiles/vim/vundle.vim
 filetype plugin indent on    " required
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 
 syntax enable
 set background=dark
-colorscheme solarized
+silent! colorscheme solarized
+" Make sure to set iTerm 2 colour profile to Solarized Dark
+" http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized
 
-" Syntastic start
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+if has("syntastic")
+	set statusline+=%#warningmsg#
+	set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-" Syntastic end
+	let g:syntastic_always_populate_loc_list = 1
+	let g:syntastic_auto_loc_list = 1
+	let g:syntastic_check_on_open = 1
+	let g:syntastic_check_on_wq = 0
+endif
+
+autocmd FileType gitconfig setlocal shiftwidth=8 tabstop=8
+
 
 set hlsearch
