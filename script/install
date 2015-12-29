@@ -12,3 +12,6 @@ brew bundle
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+# This should really be in vim/install.sh, but I couldn't figure out how to make it run inside another script
+vim -c VundleUpdate -c quitall
