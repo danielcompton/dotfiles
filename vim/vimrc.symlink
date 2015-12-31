@@ -3,6 +3,10 @@ filetype off                  " required
 
 source ~/.dotfiles/vim/vundle.vim
 filetype plugin indent on    " required
+
+" Fix backspace issues in insert mode
+set backspace=indent,eol,start
+
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -29,5 +33,11 @@ endif
 
 autocmd FileType gitconfig setlocal shiftwidth=8 tabstop=8
 
+" Up and down by visual lines, not logical lines
+" http://tilvim.com/2013/05/16/visual-lines.html
+nnoremap k gk
+nnoremap j gj
+nnoremap gk k
+nnoremap gj j
 
 set hlsearch
