@@ -41,6 +41,7 @@ brew 'z'
 brew 'zsh'
 
 cask '1password'
+cask 'atom'
 cask 'backblaze'
 cask 'backuploupe'
 cask 'bartender'
