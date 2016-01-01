@@ -72,6 +72,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
+# Disable new window animations
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
 
 # Dock/Expose
 # Hot corners
