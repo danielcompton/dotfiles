@@ -1,0 +1,1 @@
+alias prof="vim $HOME/.lein/profiles.clj"

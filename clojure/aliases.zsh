@@ -1,1 +1,0 @@
-alias proj="vim $HOME/.lein/profiles.clj"

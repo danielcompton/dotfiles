@@ -1,0 +1,42 @@
+# Symlinked to ~/.config/fish/config.fish
+
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+# your project folder that we can `c [tab]` to
+export PROJECTS=~/Developer
+
+# Stash your environment variables in ~/.localrc. This means they'll stay out
+# of your main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in your scripts.
+if test -e ~/.localrc
+  source ~/.localrc
+end
+
+# all of our zsh files
+set config_files $ZSH/**/*.fish
+
+# find . ! -name '*.html' ! -name '*.svn*' -exec grep 'SearchString' {} /dev/null \;
+
+# load the path files (we don't have any atm)
+# for file in (find $ZSH/**/path.fish)
+#   source $file
+# end
+
+# load everything but the path and completion files
+for file in (find $ZSH/**/*.fish ! -name path.fish ! -name completion.fish)
+  source $file
+end
+
+# initialize autocomplete here, otherwise functions won't be loaded
+# autoload -U compinit
+# compinit
+
+# load every completion after autocomplete loads
+for file in (find $ZSH/**/completion.fish)
+  source $file
+end
+
+
+
+# TODO: https://news.ycombinator.com/item?id=4073727
