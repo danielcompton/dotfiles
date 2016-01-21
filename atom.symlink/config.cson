@@ -3,8 +3,9 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 15
     softWrapAtPreferredLineLength: true
+    fontSize: 13
+    autoIndentOnPaste: false
   core:
     ignoredNames: [
       ".bundle"
@@ -15,8 +16,8 @@
       "vendor"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "solarized-dark-ui"
+      "solarized-dark-syntax"
     ]
     hideGitIgnoredFiles: true
     disabledPackages: [
@@ -37,3 +38,6 @@
     viewedVersion: "0.89.0"
   "go-plus":
     goPath: "/Users/holman/Code/go"
+".source.yaml":
+  editor:
+    autoIndentOnPaste: true

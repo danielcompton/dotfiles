@@ -95,8 +95,8 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Application windows
-defaults write com.apple.dock wvous-bl-corner -int 3
-defaults write com.apple.dock wvous-bl-modifier -int 0
+# defaults write com.apple.dock wvous-bl-corner -int 3
+# defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Notification Center
 defaults write com.apple.dock wvous-br-corner -int 12
 defaults write com.apple.dock wvous-br-modifier -int 0
@@ -117,6 +117,8 @@ defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Sort contacts by first name, then last name
+defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 
 # Kill all affected apps (except Safari, because it's annoying to close that one)
 for app in "cfprefsd" "Dock" "Finder" "Mail" "Kaleidoscope" "Tower" "SystemUIServer"; do

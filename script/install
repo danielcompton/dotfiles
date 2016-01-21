@@ -6,6 +6,7 @@ set -e
 
 cd "$(dirname $0)"/..
 
+set -x
 # Run Homebrew through the Brewfile
 echo "› brew bundle"
 brew bundle
@@ -14,4 +15,5 @@ brew bundle
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
 # This should really be in vim/install.sh, but I couldn't figure out how to make it run inside another script
-vim -c VundleUpdate -c quitall
+echo "> vim +BundleInstall!"
+SHELL=$(which sh) vim +BundleInstall! +BundleClean! +qall

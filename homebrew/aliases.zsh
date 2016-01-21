@@ -1,0 +1,1 @@
+alias brewit="brew bundle --file=~/.dotfiles/Brewfile"
