@@ -6,6 +6,9 @@ export ZSH=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Developer
 
+# TODO: set path properly
+set --global --export PATH $ZSH/bin $PATH
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -18,10 +21,10 @@ set config_files $ZSH/**/*.fish
 
 # find . ! -name '*.html' ! -name '*.svn*' -exec grep 'SearchString' {} /dev/null \;
 
-# load the path files (we don't have any atm)
-# for file in (find $ZSH/**/path.fish)
-#   source $file
-# end
+# load the path files
+for file in (find $ZSH/**/path.fish)
+  source $file
+end
 
 # load everything but the path and completion files
 for file in (find $ZSH/**/*.fish ! -name path.fish ! -name completion.fish)
