@@ -1,6 +1,6 @@
 alias reload!='. ~/.zshrc'
 alias dotf='cd ~/.dotfiles'
-alias mated='mate ~/.dotfile'
+alias mated='mate ~/.dotfiles/'
 
 
 # set -g -x PATH ~/bin $PATH
