@@ -1,1 +1,1 @@
-alias m2="$HOME/.m2/repository"
+alias m2 "cd $HOME/.m2/repository"
