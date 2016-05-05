@@ -1,6 +1,7 @@
 alias reload!='. ~/.zshrc'
 alias dotf='cd ~/.dotfiles'
-alias mated='mate ~/.dotfiles/'
+alias mated='atom ~/.dotfiles/'
+alias flushdns='sudo killall -HUP mDNSResponder'
 
 
 # set -g -x PATH ~/bin $PATH

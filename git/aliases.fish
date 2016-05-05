@@ -19,7 +19,9 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 
 alias gap="git add --patch"
+alias gds="git diff --staged"
 alias gdt="git difftool"
+alias gdts="git difftool --staged"
 alias gcm="git commit -m"
 alias gmt="git mergetool"
 alias grhh="git reset HEAD --hard"
@@ -31,3 +33,4 @@ alias ga.="git add ."
 alias ga="git add"
 alias gcl="git clone"
 alias gw="git wtf"
+alias gpf="git push --force-with-lease"

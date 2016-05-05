@@ -16,11 +16,11 @@ $ZSH/osx/set-defaults.sh
 # Install homebrew
 $ZSH/homebrew/install.sh 2>&1
 
-# Upgrade homebrew
+# Update homebrew
 echo "› brew update"
 brew update
 
-# Cleanup homebrea
+# Cleanup homebrew
 echo "> brew cask cleanup"
 brew cask cleanup
 
