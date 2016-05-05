@@ -1,4 +1,6 @@
 "*":
+  autosave:
+    enabled: true
   core:
     disabledPackages: [
       "background-tips"
@@ -14,6 +16,7 @@
       "repositories"
       "tmp"
       "vendor"
+      ".DS_Store"
     ]
     themes: [
       "solarized-dark-ui"
@@ -27,6 +30,7 @@
     softWrapAtPreferredLineLength: true
   "go-plus":
     goPath: "/Users/holman/Code/go"
+  "platformio-ide": {}
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
@@ -35,5 +39,9 @@
       "source.gfm"
       "text.git-commit"
     ]
+  "tool-bar":
+    position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
