@@ -24,6 +24,7 @@
 ######################
 *.log
 *.sqlite
+rethinkdb_data/
 
 # OS generated files #
 ######################
@@ -39,4 +40,6 @@ Thumbs.db
 #######
 #.idea/
 *.iml
-.idea/
+!.idea/
+.idea/*
+!/.idea/codeStyleSettings.xml

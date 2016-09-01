@@ -32,6 +32,7 @@
         trustexitcode = true
 [diff]
         tool = Kaleidoscope
+	compactionHeuristic = true
 [difftool "Kaleidoscope"]
         cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
@@ -60,5 +61,3 @@
 [pager]
         diff = diff-so-fancy | less --tabs=4 -RFX
         show = diff-so-fancy | less --tabs=4 -RFX
-[user]
-	signingkey = 25E184B4
