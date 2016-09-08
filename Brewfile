@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions' # For alternate cask versions
 tap 'homebrew/bundle'
+tap 'tldr-pages/tldr' # https://github.com/tldr-pages/homebrew-tldr/issues/6
 
 brew 'ack'
 brew 'ansible'
@@ -44,6 +45,7 @@ brew 'spaceman-diff'
 brew 'spark'
 brew 'tcping'
 brew 'tmux'
+brew 'tldr'
 brew 'tree'
 brew 'unrar'
 brew 'watch'
