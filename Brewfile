@@ -16,6 +16,7 @@ brew 'cmake'
 brew 'coreutils'
 brew 'diff-so-fancy'
 brew 'dfu-util'
+brew 'editorconfig'
 brew 'emacs', args: ['--HEAD' '--use-git-head' '--with-cocoa' '--with-gnutls' '--with-rsvg' '--with-imagemagick']
 brew 'forego'
 brew 'gcc'
