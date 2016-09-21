@@ -1,1 +1,1 @@
-set --global --export PATH $ZSH/bin $PATH
+# set --global --export PATH $ZSH/bin $PATH
