@@ -47,7 +47,7 @@
         default = simple
 [commit]
         template = ~/.git_commit_msg
-             # gpgsign = true
+        gpgsign = true
 [filter "lfs"]
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
