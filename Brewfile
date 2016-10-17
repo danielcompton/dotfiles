@@ -21,6 +21,7 @@ brew 'dfu-util'
 brew 'editorconfig'
 brew 'emacs', args: ['--HEAD' '--use-git-head' '--with-cocoa' '--with-gnutls' '--with-rsvg' '--with-imagemagick']
 brew 'forego'
+brew 'fish'
 brew 'gcc'
 brew 'git'
 brew 'git-flow-avh'
