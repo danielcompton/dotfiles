@@ -18,6 +18,7 @@
       "vendor"
       ".DS_Store"
     ]
+    telemetryConsent: "limited"
     themes: [
       "solarized-dark-ui"
       "solarized-dark-syntax"
