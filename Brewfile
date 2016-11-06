@@ -3,7 +3,9 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions' # For alternate cask versions
 tap 'homebrew/bundle'
-tap 'tldr-pages/tldr' # https://github.com/tldr-pages/homebrew-tldr/issues/6
+tap 'railwaycat/emacsport'
+
+cask 'xquartz' # Needs to be installed before wine
 
 brew 'ack'
 brew 'ansible'
@@ -63,6 +65,7 @@ cask 'backuploupe'
 cask 'bartender'
 cask 'cyberduck'
 cask 'day-o'
+cask 'emacs-mac'
 cask 'fantastical'
 cask 'filebot'
 cask 'firefox'
@@ -90,6 +93,7 @@ cask 'omnioutliner'
 cask 'plex-home-theater'
 cask 'plex-media-player'
 cask 'plex-media-server'
+cask 'qlmarkdown'
 cask 'quicksilver'
 cask 'rescuetime'
 cask 'skype'
