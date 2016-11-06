@@ -124,3 +124,6 @@ defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstNa
 for app in "cfprefsd" "Dock" "Finder" "Mail" "Kaleidoscope" "Tower" "SystemUIServer"; do
 	killall "${app}" > /dev/null 2>&1
 done
+
+# Don't warn when changing file extensions
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
