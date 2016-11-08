@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions' # For alternate cask versions
 tap 'homebrew/bundle'
-tap 'railwaycat/emacsport'
+tap 'railwaycat/homebrew-emacsmacport'
 
 cask 'xquartz' # Needs to be installed before wine
 
@@ -34,6 +34,7 @@ brew 'hub'
 brew 'hugo'
 brew 'jq'
 brew 'keybase'
+brew 'mas'
 brew 'macvim', args: ['with-override-system-vim']
 brew 'maven'
 brew 'mercurial'
@@ -54,6 +55,7 @@ brew 'tmux'
 brew 'tldr'
 brew 'tree'
 brew 'unrar'
+brew 'v8'
 brew 'watch'
 brew 'z'
 brew 'zsh'
@@ -117,29 +119,34 @@ cask 'xscope'
 # caskroom/versions
 cask 'google-chrome-canary'
 
-# To manually install from MAS
-# Boom
-# Byword
-# Caffeine
-# Calca
-# Coffitivity
-# Deckset
-# Deliveries
-# Due
-# Fantastical
-# Kindle
-# Palua
-# Piezo
-# Pixelmator
-# Pocket
-# Radia
-# ReadKit
-# Reeder
-# ScreenFloat
-# Soulver
-# Sparrow
-# Stars
-# TextWrangler
-# Textual 5
-# Tweetbot
-# Xcode
+mas 'Boxy', id: 1053031090
+mas 'Reeder', id: 880001334
+mas 'Palua', id: 431494195
+mas 'Xcode', id: 497799835
+mas 'Pixelmator', id: 407963104
+mas 'Deckset', id: 847496013
+mas 'TextWrangler', id: 404010395
+mas 'ScreenFloat', id: 414528154
+mas 'Take Five', id: 424437399
+mas 'Piezo', id: 440641508
+mas 'Stars', id: 926319434
+mas 'Tweetbot', id: 557168941
+mas 'Deliveries', id: 924726344
+mas 'Quiver', id: 866773894
+mas 'Podcast Chapters', id: 1070963477
+mas 'Radia', id: 509525864
+mas 'SiteSucker', id: 442168834
+mas 'BreakTime', id: 427475982
+mas 'Coffitivity', id: 659901392
+mas 'Calca', id: 635758264
+mas 'Byword', id: 420212497
+mas 'Marked 2', id: 890031187
+mas 'Soulver', id: 413965349
+mas 'Pages', id: 409201541
+mas 'FileBot', id: 905384638
+mas 'Gapplin', id: 768053424
+mas 'Caffeine', id: 411246225
+mas 'Kindle', id: 405399194
+mas 'QuickCursor', id: 404035899
+mas 'Numbers', id: 409203825
+mas 'Irvue', id: 1039633667
