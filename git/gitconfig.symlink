@@ -47,7 +47,7 @@
         default = simple
 [commit]
         template = ~/.git_commit_msg
-        gpgsign = true
+        # gpgsign = true - slows stuff down, and causes problems with some gui apps.
 [filter "lfs"]
         clean = git-lfs clean %f
         smudge = git-lfs smudge %f
