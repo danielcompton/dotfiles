@@ -1,4 +1,10 @@
 "*":
+  "atom-beautify":
+    general:
+      analytics: false
+    js:
+      beautify_on_save: true
+      indent_size: 2
   autosave:
     enabled: true
   core:
@@ -44,5 +50,6 @@
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
