@@ -12,6 +12,20 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "atom-beautify"
+      "atom-ternjs"
+      "autocomplete-clang"
+      "build"
+      "busy"
+      "git-plus"
+      "language-csv"
+      "language-fish-shell"
+      "language-ini"
+      "language-nginx"
+      "linter-gcc"
+      "multi-cursor"
+      "tool-bar"
+      "linter-packer-validate"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -31,12 +45,20 @@
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 15
+    fontSize: 13
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
+  "go-debug":
+    dlvPath: "/usr/local/bin"
   "go-plus":
-    goPath: "/Users/holman/Code/go"
+    get: {}
+    goPath: "~/Developer/go"
+  "linter-packer-validate": {}
+  "linter-ui-default":
+    panelHeight: 78
+  "markdown-writer":
+    fileExtension: ".md"
   "platformio-ide": {}
   "release-notes":
     viewedVersion: "0.89.0"
@@ -46,10 +68,25 @@
       "source.gfm"
       "text.git-commit"
     ]
+    locales: [
+      "en-NZ"
+      "en-AU"
+      "en-GB"
+    ]
   "tool-bar":
     position: "Left"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".json.source":
+  editor:
+    autoIndent: true
+".python.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+".source.yaml":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
