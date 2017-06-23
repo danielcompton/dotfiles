@@ -4,7 +4,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Developer
+set -x PROJECTS ~/Developer
 
 # TODO: set path properly
 set --global --export PATH $ZSH/bin $PATH

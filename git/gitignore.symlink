@@ -1,6 +1,5 @@
 # Compiled source #
 ###################
-*.com
 *.class
 *.dll
 *.exe
@@ -42,4 +41,3 @@ Thumbs.db
 *.iml
 !.idea/
 .idea/*
-!/.idea/codeStyleSettings.xml
