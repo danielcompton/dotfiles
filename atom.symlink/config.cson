@@ -1,10 +1,16 @@
 "*":
   "atom-beautify":
+    css:
+      beautify_on_save: true
     general:
+      _analyticsUserId: "1ef79e4f-e11d-49b3-898e-1567a8d44e90"
       analytics: false
+    html: {}
     js:
       beautify_on_save: true
       indent_size: 2
+    json:
+      beautify_on_save: true
   autosave:
     enabled: true
   core:
@@ -12,20 +18,19 @@
       "background-tips"
       "exception-reporting"
       "metrics"
-      "atom-beautify"
       "atom-ternjs"
       "autocomplete-clang"
       "build"
       "busy"
       "git-plus"
       "language-csv"
-      "language-fish-shell"
       "language-ini"
       "language-nginx"
       "linter-gcc"
       "multi-cursor"
       "tool-bar"
       "linter-packer-validate"
+      "atom-beautify"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -56,10 +61,14 @@
     goPath: "~/Developer/go"
   "linter-packer-validate": {}
   "linter-ui-default":
-    panelHeight: 78
+    panelHeight: 60
+    showPanel: true
   "markdown-writer":
     fileExtension: ".md"
   "platformio-ide": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
