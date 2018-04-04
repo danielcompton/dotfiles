@@ -19,6 +19,7 @@ set expandtab
 
 syntax enable
 set background=dark
+let g:solarized_termtrans = 1 " Gets rid of grey background
 silent! colorscheme solarized
 " Make sure to set iTerm 2 colour profile to Solarized Dark
 " http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized
