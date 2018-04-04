@@ -14,13 +14,13 @@
   autosave:
     enabled: true
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
       "atom-ternjs"
       "autocomplete-clang"
-      "build"
       "busy"
       "git-plus"
       "language-csv"
@@ -31,6 +31,24 @@
       "tool-bar"
       "linter-packer-validate"
       "atom-beautify"
+      "busy-signal"
+      "emmet"
+      "intentions"
+      "language-docker"
+      "language-fish-shell"
+      "language-systemd"
+      "linter-js-yaml"
+      "linter-stylelint"
+      "linter-ui-default"
+      "prettier-atom"
+      "language-emacs-lisp"
+      "language-rust"
+      "linter-rust"
+      "linter-terraform-syntax"
+      "terraform-fmt"
+      "linter"
+      "build-cargo"
+      "build"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -60,9 +78,12 @@
     get: {}
     goPath: "~/Developer/go"
   "linter-packer-validate": {}
+  "linter-terraform-syntax":
+    terraformExecutablePath: "/usr/local/bin/terraform"
+    useTerraformFormat: true
   "linter-ui-default":
     panelHeight: 60
-    showPanel: true
+    panelRepresents: "Entire Project"
   "markdown-writer":
     fileExtension: ".md"
   "platformio-ide": {}
@@ -72,16 +93,22 @@
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
+    addKnownWords: true
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
+    ]
+    knownWords: [
+      "Deps"
     ]
     locales: [
       "en-NZ"
       "en-AU"
       "en-GB"
     ]
+  "terraform-fmt":
+    binPath: "/usr/local/bin/terraform"
   "tool-bar":
     position: "Left"
   "tree-view":
