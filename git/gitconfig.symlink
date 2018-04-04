@@ -23,12 +23,12 @@
 [apply]
         whitespace = nowarn
 [merge]
-        tool = Kaleidoscope
+	tool = Kaleidoscope
 [mergetool]
         keepBackup = false
         prompt = false
 [mergetool "Kaleidoscope"]
-        cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
         trustexitcode = true
 [diff]
         tool = Kaleidoscope
@@ -45,13 +45,15 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+	followTags = true
 [commit]
         template = ~/.git_commit_msg
         # gpgsign = true - slows stuff down, and causes problems with some gui apps.
 [filter "lfs"]
-        clean = git-lfs clean %f
-        smudge = git-lfs smudge %f
         required = true
+	process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 # Check that any objects received are complete and correct
 [transfer]
         fsckobjects = true
