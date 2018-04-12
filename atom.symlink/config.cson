@@ -45,7 +45,6 @@
       "language-rust"
       "linter-rust"
       "linter-terraform-syntax"
-      "terraform-fmt"
       "linter"
       "build-cargo"
       "build"

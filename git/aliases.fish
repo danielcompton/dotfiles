@@ -8,6 +8,7 @@ end
 alias gl='git up --ff-only --prune'
 alias glq='git pull --ff-only --prune' # Git puLl Quiet
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gll="git lg -n10"
 alias gp='git push'
 alias gd='git diff'
 alias gc='git commit --verbose'
