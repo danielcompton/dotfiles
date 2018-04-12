@@ -41,6 +41,7 @@ for file in (find $ZSH/**/completion.fish)
 end
 
 
+eval (direnv hook fish)
 
 # TODO: https://news.ycombinator.com/item?id=4073727
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
