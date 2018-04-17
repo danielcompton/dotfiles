@@ -22,9 +22,6 @@ chflags nohidden ~/Library
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 2
 
-# Disable local Time Machine snapshots
-sudo tmutil disablelocal
-
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -58,6 +55,8 @@ defaults write -app Safari AutoFillPasswords -int 0
 defaults write -app Safari ShowFullURLInSmartSearchField -int 1
 defaults write -app Safari ShowSidebarInTopSites -int 0
 defaults write com.apple.Safari HomePage -string "about:blank"
+defaults write com.apple.Safari NewWindowBehavior -int 1 # Empty Page
+defaults write com.apple.Safari NewTabBehavior -int 1 # Empty Page
 # Prevent Safari from opening ‘safe’ files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Make Safari’s search banners default to Contains instead of Starts With
@@ -71,9 +70,14 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+# Sort new messages in a thread to the top
+defaults write com.apple.mail ConversationViewSortDescending -int 1
 
 # Disable new window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
+
+# Enable Text Selection in Quick Look Windows
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE;killall Finder
 
 # Dock/Expose
 # Hot corners
@@ -127,3 +131,6 @@ done
 
 # Don't warn when changing file extensions
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Show all file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
