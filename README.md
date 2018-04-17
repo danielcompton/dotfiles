@@ -66,6 +66,15 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
+## Manual setup
+
+* AWS
+* Gcloud, `gcloud init`, `gcloud auth application-default login`
+* Generate new SSH key for device
+* Setup keyboard Caps Lock -> Escape
+* Setup mitogen
+* Setup fish prompt
+
 ## bugs
 
 I want this to work for everyone; that means when you clone it down it should
