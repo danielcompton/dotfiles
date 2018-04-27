@@ -17,7 +17,7 @@ if test -e ~/.localrc
 end
 
 # all of our zsh files
-set config_files $ZSH/**/*.fish
+# set config_files $ZSH/**/*.fish
 
 # find . ! -name '*.html' ! -name '*.svn*' -exec grep 'SearchString' {} /dev/null \;
 
