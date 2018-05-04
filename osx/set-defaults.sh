@@ -72,6 +72,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Sort new messages in a thread to the top
 defaults write com.apple.mail ConversationViewSortDescending -int 1
+# Archive messages instead of deleting them
+defaults write com.apple.mail SwipeAction -int 1 # 0 is delete, 1 is archive
 
 # Disable new window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
