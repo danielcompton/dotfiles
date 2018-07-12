@@ -136,7 +136,7 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
-  link_file "$DOTFILES_ROOT/fish/config.fish.symlink" "$HOME/.config/fish/config.fish"
+  link_file "$HOME/.config/fish/config.fish" "$DOTFILES_ROOT/fish/config.fish.symlink"
 
 }
 
