@@ -39,6 +39,7 @@ Thumbs.db
 # IDE #
 #######
 *.iml
+.idea/
 
 # Vim
 *.swp

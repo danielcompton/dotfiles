@@ -45,7 +45,7 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
-	followTags = true
+        #followTags = true
 [commit]
         template = ~/.git_commit_msg
         # gpgsign = true - slows stuff down, and causes problems with some gui apps.
