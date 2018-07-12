@@ -6,6 +6,8 @@ tap 'homebrew/bundle'
 tap 'railwaycat/homebrew-emacsmacport'
 tap 'getsentry/tools'
 
+cask 'java' # Java is required for many other tools to be installed.
+
 brew 'ack'
 brew 'ansible'
 brew 'ant'
