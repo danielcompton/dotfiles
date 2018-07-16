@@ -11,14 +11,16 @@ cask 'java' # Java is required for many other tools to be installed.
 brew 'ack'
 brew 'ansible'
 brew 'ant'
-brew 'awsebcli'
+brew 'aws-elasticbeanstalk'
 brew 'awscli'
+brew 'bazel'
 brew 'boot-clj'
 brew 'chrome-cli'
 brew 'cloc'
 brew 'clojure'
 brew 'cmake'
 brew 'coreutils'
+brew 'curl'
 brew 'diff-so-fancy'
 brew 'direnv'
 brew 'dfu-util'
@@ -41,6 +43,7 @@ brew 'httpie'
 brew 'hub'
 brew 'hugo'
 brew 'jq'
+brew 'ledger'
 brew 'mas'
 brew 'maven'
 brew 'mercurial'
@@ -49,18 +52,22 @@ brew 'mosh'
 brew 'node'
 brew 'openssl'
 brew 'packer'
+brew 'parquet-tools'
 brew 'pinentry-mac'
+brew 'pipenv'
 brew 'pup'
 brew 'python'
+brew 'pyenv'
 brew 'readline'
 brew 'rethinkdb'
-brew 'rg'
+brew 'ripgrep'
 brew 'rlwrap'
 brew 'roundup'
 brew 'getsentry/tools/sentry-cli'
 brew 'sbt'
 brew 'spaceman-diff'
 brew 'spark'
+brew 'terraform'
 brew 'tcping'
 brew 'tmux'
 brew 'tldr'
@@ -99,6 +106,7 @@ cask 'intellij-idea'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'java' unless system "/usr/libexec/java_home --failfast"
+cask 'java8'
 # cask 'jce-unlimited-strength-policy'
 cask 'jumpcut'
 # cask 'karabiner'
@@ -128,26 +136,29 @@ cask 'yourkit-java-profiler'
 # caskroom/versions
 cask 'google-chrome-canary'
 
-mas 'Reeder', id: 880001334
 # mas 'Palua', id: 431494195 # Not on App Store any more?
-mas 'Xcode', id: 497799835
-mas 'Pixelmator', id: 407963104
-mas 'Deckset', id: 847496013
-#mas 'TextWrangler', id: 404010395
-mas 'ScreenFloat', id: 414528154
-mas 'Stars', id: 926319434
-#mas 'Tweetbot', id: 557168941
-mas 'Deliveries', id: 924726344
-#mas 'Quiver', id: 866773894
-mas 'Calca', id: 635758264
-mas 'Byword', id: 420212497
-mas 'Marked 2', id: 890031187
-mas 'Soulver', id: 413965349
-mas 'Pages', id: 409201541
-mas 'Gapplin', id: 768053424
-mas 'Caffeine', id: 411246225 # Not on App Store any more?
-mas 'Kindle', id: 405399194
-#mas 'QuickCursor', id: 404035899
-mas 'Numbers', id: 409203825
 #mas 'Irvue', id: 1039633667
+#mas 'QuickCursor', id: 404035899
+#mas 'Quiver', id: 866773894
+#mas 'TextWrangler', id: 404010395
+#mas 'Tweetbot', id: 557168941
+mas 'Byword', id: 420212497
+mas 'Caffeine', id: 411246225 # Not on App Store any more?
+mas 'Calca', id: 635758264
+mas 'Day One', id: 1055511498
+mas 'Deckset', id: 847496013
+mas 'Deliveries', id: 924726344
+mas 'Gapplin', id: 768053424
+mas 'Kindle', id: 405399194
+mas 'Marked 2', id: 890031187
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Pixelmator', id: 407963104
+mas 'Reeder', id: 880001334
+mas 'ScreenFloat', id: 414528154
 mas 'Slack', id: 803453959
+mas 'Soulver', id: 413965349
+mas 'Stars', id: 926319434
+mas 'Stars', id: 926319434
+mas 'Textual 7', id: 1262957439
+mas 'Xcode', id: 497799835
