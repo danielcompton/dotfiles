@@ -136,6 +136,8 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
+  mkdir -p ~/.config
+  mkdir -p ~/.config/fish
   link_file "$DOTFILES_ROOT/fish/config.fish.symlink" "$HOME/.config/fish/config.fish"
 
 }
