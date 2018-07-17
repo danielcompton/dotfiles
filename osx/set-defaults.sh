@@ -74,6 +74,13 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write com.apple.mail ConversationViewSortDescending -int 1
 # Archive messages instead of deleting them
 defaults write com.apple.mail SwipeAction -int 1 # 0 is delete, 1 is archive
+# Notify only for VIP messages
+defaults write com.apple.mail MailUserNotificationScope -int 2
+# Turn off new message sound
+defaults write com.apple.mail NewMessagesSoundName -string ""
+# Don't show message preview
+defaults write com.apple.mail NumberOfSnippetLines -int 0
+
 
 # Disable new window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
