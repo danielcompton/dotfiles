@@ -50,7 +50,7 @@ There's a few special files in the hierarchy.
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+git clone https://github.com/danielcompton/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
@@ -74,6 +74,11 @@ this script in `bin/`.
 * Setup keyboard Caps Lock -> Escape
 * Setup mitogen
 * Setup fish prompt
+
+### App setup
+
+* Atext
+* Harvest
 
 ## bugs
 
