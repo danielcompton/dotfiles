@@ -115,7 +115,6 @@ cask 'nvalt'
 cask 'omnidisksweeper'
 cask 'omnifocus'
 cask 'omnioutliner'
-cask 'plex-media-server'
 cask 'postgres'
 cask 'postico'
 cask 'qlmarkdown'
@@ -130,6 +129,7 @@ cask 'textual'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'tripmode'
+cask 'visual-studio-code'
 cask 'vlc'
 cask 'yourkit-java-profiler'
 
@@ -143,7 +143,7 @@ cask 'google-chrome-canary'
 #mas 'TextWrangler', id: 404010395
 #mas 'Tweetbot', id: 557168941
 mas 'Byword', id: 420212497
-mas 'Caffeine', id: 411246225 # Not on App Store any more?
+#mas 'Caffeine', id: 411246225 # Not on App Store any more?
 mas 'Calca', id: 635758264
 mas 'Day One', id: 1055511498
 mas 'Deckset', id: 847496013
@@ -156,7 +156,7 @@ mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
 mas 'Reeder', id: 880001334
 mas 'ScreenFloat', id: 414528154
-mas 'Slack', id: 803453959
+#mas 'Slack', id: 803453959
 mas 'Soulver', id: 413965349
 mas 'Stars', id: 926319434
 mas 'Stars', id: 926319434
