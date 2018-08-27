@@ -6,10 +6,16 @@ set -e
 
 cd "$(dirname $0)"/..
 
+set +e
+# The Homebrew bundle can fail (e.g. bad checksums) but we would
+# still want the rest of the installers to run.
+
 set -x
 # Run Homebrew through the Brewfile
 echo "› brew bundle"
 brew bundle
+
+set -e
 
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
