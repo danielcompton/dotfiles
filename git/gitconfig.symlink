@@ -49,11 +49,6 @@
 [commit]
         template = ~/.git_commit_msg
         # gpgsign = true - slows stuff down, and causes problems with some gui apps.
-[filter "lfs"]
-        required = true
-	process = git-lfs filter-process
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
 # Check that any objects received are complete and correct
 [transfer]
         fsckobjects = true
