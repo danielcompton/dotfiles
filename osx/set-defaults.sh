@@ -54,6 +54,8 @@ defaults write -app Safari SendDoNotTrackHTTPHeader -int 1
 defaults write -app Safari AutoFillPasswords -int 0
 defaults write -app Safari ShowFullURLInSmartSearchField -int 1
 defaults write -app Safari ShowSidebarInTopSites -int 0
+# Show the URL preview in bottom left
+defaults write -app Safari ShowOverlayStatusBar -int 1
 defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari NewWindowBehavior -int 1 # Empty Page
 defaults write com.apple.Safari NewTabBehavior -int 1 # Empty Page
@@ -143,3 +145,63 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Show all file extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+### Third Party Apps
+
+# GitUp
+
+defaults write co.gitup.mac FirstLaunch -int 0
+defaults write co.gitup.mac "HelpShown_COMMIT" -int 2
+defaults write co.gitup.mac "HelpShown_MAP" -int 4
+defaults write co.gitup.mac "HelpShown_QUICKVIEW" -int 1
+defaults write co.gitup.mac SUAutomaticallyUpdate -int 1
+defaults write co.gitup.mac "GIViewController_DiffTool" -string "Kaleidoscope"
+defaults write co.gitup.mac "GIViewController_MergeTool" -string "Kaleidoscope"
+defaults write co.gitup.mac "GIMapViewController_SkipPullBranchWarning" -int 1
+defaults write co.gitup.mac "GIMapViewController_SkipPushBranchWarning" -int 1
+
+# iTerm2
+
+defaults write com.googlecode.iterm2 OnlyWhenMoreTabs -int 0
+
+# Kaleidoscope
+
+defaults write com.blackpixel.kaleidoscope KSIgnoreWhitespaceUserDefaultsKey -int 1
+
+# Jumpcut
+# Set shortcut to Command + Shift + v
+# See # https://github.com/Hammerspoon/hammerspoon/issues/1021 for details
+defaults write net.sf.Jumpcut "ShortcutRecorder mainHotkey" '{ keyCode = 9; modifierFlags = 1179648; }'
+
+# Calca
+
+defaults write com.kruegersystems.calca.mac QuickEntryHotKeyDisabled -int 1
+
+# Harvest
+
+defaults write com.getharvest.harvestx SUEnableAutomaticCheck -int 1
+
+# Reeder
+
+defaults write com.reederapp.rkit2.mac AppIconUnreadCount -int 2
+defaults write com.reederapp.rkit2.mac AppOrderUnreadItems -int 1
+
+# nvAlt
+
+defaults write net.elasticthreads.nv ShowGrid -int 0
+
+# OmniFocus
+
+defaults write com.omnigroup.OmniFocus2 OOReturnShouldCreateNewRow -int 1
+defaults write com.omnigroup.OmniFocus2 OOShouldToggleEditingWithEscapeKey -int 1
+
+# Logic
+
+defaults write com.apple.logic10 FeatureAvailable_ExpertAudio -int 1
+
+# Stars
+
+defaults write com.karelia.Stars hidesCompletely -int 1
+defaults write com.karelia.Stars hidesCompletelyAlertSuppress -int 1
+defaults write com.karelia.Stars popUpEnabled -int 0
+defaults write com.karelia.Stars unratedNotificationEnabled -int 0
