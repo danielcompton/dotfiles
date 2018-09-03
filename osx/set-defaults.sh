@@ -52,6 +52,8 @@ defaults write com.apple.Safari ShowFavoritesBar -bool false
 defaults write com.apple.Safari ShowStatusBar -bool true
 defaults write -app Safari SendDoNotTrackHTTPHeader -int 1
 defaults write -app Safari AutoFillPasswords -int 0
+defaults write -app Safari AutoFillFromAddressBook -int 0
+defaults write -app Safari AutoFillMiscellaneousForms -int 0
 defaults write -app Safari ShowFullURLInSmartSearchField -int 1
 defaults write -app Safari ShowSidebarInTopSites -int 0
 # Show the URL preview in bottom left
@@ -63,6 +65,9 @@ defaults write com.apple.Safari NewTabBehavior -int 1 # Empty Page
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Make Safari’s search banners default to Contains instead of Starts With
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+# Reopen all windows from last time
+defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -int 1
+defaults write com.apple.Safari OpenPrivateWindowWhenNotRestoringSessionAtLaunch -int 0
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
@@ -194,6 +199,10 @@ defaults write net.elasticthreads.nv ShowGrid -int 0
 
 defaults write com.omnigroup.OmniFocus2 OOReturnShouldCreateNewRow -int 1
 defaults write com.omnigroup.OmniFocus2 OOShouldToggleEditingWithEscapeKey -int 1
+defaults write com.omnigroup.OmniFocus2 ForecastShowDeferredItemsSection -int 1
+defaults write com.omnigroup.OmniFocus2 OSUIncludeHardwareDetails -int 1
+defaults write com.omnigroup.OmniFocus2 PreferredLayoutMode -string "columns"
+defaults write com.omnigroup.OmniFocus2 TryProEdition -int 1
 
 # Logic
 
