@@ -81,6 +81,8 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write com.apple.mail ConversationViewSortDescending -int 1
 # Archive messages instead of deleting them
 defaults write com.apple.mail SwipeAction -int 1 # 0 is delete, 1 is archive
+# Set e as the Archive key
+defaults write -app Mail NSUserKeyEquivalents -dict-add "Archive" -string "e"
 # Notify only for VIP messages
 defaults write com.apple.mail MailUserNotificationScope -int 2
 # Turn off new message sound
@@ -159,6 +161,8 @@ defaults write co.gitup.mac FirstLaunch -int 0
 defaults write co.gitup.mac "HelpShown_COMMIT" -int 2
 defaults write co.gitup.mac "HelpShown_MAP" -int 4
 defaults write co.gitup.mac "HelpShown_QUICKVIEW" -int 1
+defaults write co.gitup.mac "HelpShown_RESOLVE" -int 1
+defaults write co.gitup.mac "HelpShown_STASHES" -int 1
 defaults write co.gitup.mac SUAutomaticallyUpdate -int 1
 defaults write co.gitup.mac "GIViewController_DiffTool" -string "Kaleidoscope"
 defaults write co.gitup.mac "GIViewController_MergeTool" -string "Kaleidoscope"
