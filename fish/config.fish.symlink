@@ -13,7 +13,7 @@ set --global --export PATH $ZSH/bin $PATH
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
 if test -e ~/.localrc
-  source ~/.localrc
+    source ~/.localrc
 end
 
 # all of our zsh files
@@ -23,12 +23,12 @@ end
 
 # load the path files
 for file in (find $ZSH/**/path.fish)
-  source $file
+    source $file
 end
 
 # load everything but the path and completion files
 for file in (find $ZSH/**/*.fish ! -name path.fish ! -name completion.fish)
-  source $file
+    source $file
 end
 
 # initialize autocomplete here, otherwise functions won't be loaded
@@ -37,11 +37,18 @@ end
 
 # load every completion after autocomplete loads
 for file in (find $ZSH/**/completion.fish)
-  source $file
+    source $file
 end
 
 
-eval (direnv hook fish)
+# Expanding the eval to get the function directly:
+# eval (direnv hook fish)
+function __direnv_export_eval --on-event fish_prompt
+
+    eval ("/usr/local/bin/direnv" export fish)
+
+end
 
 # TODO: https://news.ycombinator.com/item?id=4073727
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+test -e {$HOME}/.iterm2_shell_integration.fish
+and source {$HOME}/.iterm2_shell_integration.fish

@@ -1,7 +1,7 @@
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
 if type -q hub
-  alias git=(which hub)
+    alias git=(which hub)
 end
 
 # The rest of my fun git aliases
