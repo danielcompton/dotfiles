@@ -62,3 +62,7 @@
 # TODO: waiting on https://github.com/so-fancy/diff-so-fancy/issues/35
 #[interactive]
 #        diffFilter = "diff-so-fancy | less --tabs=4 -RFX"
+[pull]
+	rebase = true
+[protocol]
+	version = 2
