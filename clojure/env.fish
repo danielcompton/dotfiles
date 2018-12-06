@@ -7,3 +7,7 @@ set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Ho
 set -x SPIDERMONKEY_HOME "$HOME/Developer/js-engines/jsshell-mac"
 set -x NASHORN_HOME "$JAVA_HOME/bin"
 set -x V8_HOME "/usr/local/bin"
+
+## For GPG
+## See also https://blog.scottlowe.org/2017/09/06/using-keybase-gpg-macos/
+set -x GPG_TTY (tty)
