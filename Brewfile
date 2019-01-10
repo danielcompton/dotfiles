@@ -5,6 +5,7 @@ tap 'caskroom/versions' # For alternate cask versions
 tap 'homebrew/bundle'
 tap 'railwaycat/homebrew-emacsmacport'
 tap 'getsentry/tools'
+tap 'domt4/autoupdate'
 
 cask 'java' # Java is required for many other tools to be installed.
 

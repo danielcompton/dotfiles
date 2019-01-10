@@ -21,4 +21,8 @@ then
 
 fi
 
+# https://github.com/DomT4/homebrew-autoupdate
+brew tap domt4/autoupdate
+brew autoupdate --start
+
 exit 0
