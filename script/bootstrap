@@ -140,6 +140,8 @@ install_dotfiles () {
   mkdir -p ~/.config/fish
   link_file "$DOTFILES_ROOT/fish/config.fish.symlink" "$HOME/.config/fish/config.fish"
 
+  mkdir -p ~/.boot
+  link_file "$DOTFILES_ROOT/clojure/profile.boot.symlink" "$HOME/.boot/profile.boot"
 }
 
 setup_gitconfig
