@@ -22,6 +22,9 @@ chflags nohidden ~/Library
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 2
 
+# Set a higher mouse speed than is possible in System Preferences
+defaults write -g com.apple.mouse.scaling 5.0
+
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
