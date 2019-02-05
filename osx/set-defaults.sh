@@ -81,8 +81,6 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Calendar
 defaults write com.apple.iCal "first day of week" -int 0
 
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Sort new messages in a thread to the top
 defaults write com.apple.mail ConversationViewSortDescending -int 1
 # Archive messages instead of deleting them
@@ -187,6 +185,8 @@ defaults write com.blackpixel.kaleidoscope KSIgnoreWhitespaceUserDefaultsKey -in
 # Set shortcut to Command + Shift + v
 # See # https://github.com/Hammerspoon/hammerspoon/issues/1021 for details
 defaults write net.sf.Jumpcut "ShortcutRecorder mainHotkey" '{ keyCode = 9; modifierFlags = 1179648; }'
+defaults write net.sf.Jumpcut "rememberNum" -int 90
+defaults write net.sf.Jumpcut "displayNum" -int 10
 
 # Calca
 
