@@ -213,6 +213,7 @@ defaults write com.omnigroup.OmniFocus2 ForecastShowDeferredItemsSection -int 1
 defaults write com.omnigroup.OmniFocus2 OSUIncludeHardwareDetails -int 1
 defaults write com.omnigroup.OmniFocus2 PreferredLayoutMode -string "columns"
 defaults write com.omnigroup.OmniFocus2 TryProEdition -int 1
+defaults write com.omnigroup.OmniFocus2 ShowInboxInProjects -int 1
 
 # Logic
 
