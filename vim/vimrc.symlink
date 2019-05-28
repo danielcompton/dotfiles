@@ -45,3 +45,6 @@ nnoremap gk k
 nnoremap gj j
 
 set hlsearch
+
+" https://github.com/kien/ctrlp.vim/issues/174#issuecomment-274775870
+let g:ctrlp_user_command = ['.git', 'cd %s && rg --files-with-matches ".*"', 'find %s -type f']
