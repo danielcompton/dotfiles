@@ -225,3 +225,7 @@ defaults write com.karelia.Stars hidesCompletely -int 1
 defaults write com.karelia.Stars hidesCompletelyAlertSuppress -int 1
 defaults write com.karelia.Stars popUpEnabled -int 0
 defaults write com.karelia.Stars unratedNotificationEnabled -int 0
+
+# Postgres.app
+
+defaults write com.postgresapp.Postgres2 ClientAppName -string "iTerm"
