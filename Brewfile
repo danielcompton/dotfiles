@@ -30,6 +30,7 @@ brew 'editorconfig'
 brew 'ephemeralpg'
 brew 'forego'
 brew 'fish'
+brew 'fd' # GNU find replacement, used by Projectile
 brew 'gcc'
 brew 'git'
 brew 'git-flow-avh'
