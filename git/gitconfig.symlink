@@ -12,6 +12,7 @@
         st = status -sb
         lg = log --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --date=relative
         cp = cherry-pick
+        recent-branches = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(align:21)(%(color:green)%(committerdate:relative)%(color:reset))%(HEAD)%(end)%(align:40)%(color:yellow)%(refname:short)%(color:reset)%(end) %(contents:subject) - %(authorname)'
 [color]
         diff = auto
         status = auto
