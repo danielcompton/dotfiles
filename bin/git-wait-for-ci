@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Loop on CI status until it succeeds.
+hub ci-status ${SHA}
+RET=$?
+# Exit code of 2 means pending
+while [ ${RET} -eq 2 ]; do
+  sleep 15
+  hub ci-status ${SHA}
+  RET=$?
+done
+
+say Done
