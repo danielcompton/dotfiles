@@ -1,7 +1,15 @@
 
-# If applied, this commit will...
+# [One line summary of changes]
 
-# Explain why this change is being made
+Because:
+#- [relevant context]
+#- [why you decided to change things]
+#- [reason you're doing it now]
+
+This commit:
+#- [does X]
+#- [does Y]
+#- does [Z]
 
 # Provide links to any relevant tickets, articles or other resources
 
