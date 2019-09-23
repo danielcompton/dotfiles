@@ -33,7 +33,6 @@ brew 'fish'
 brew 'fd' # GNU find replacement, used by Projectile
 brew 'gcc'
 brew 'git'
-brew 'git-flow-avh'
 brew 'gnupg2'
 brew 'go'
 brew 'gradle'
