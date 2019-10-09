@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+defaults read | pbcopy
+
+echo "Make your change now"
+read ok
+
+diff -u -F '^    "' <(pbpaste) <(defaults read)
