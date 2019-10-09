@@ -77,6 +77,8 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+# Disable push notification prompts
+defaults write com.apple.Safari CanPromptForPushNotifications -int 0
 
 # Calendar
 defaults write com.apple.iCal "first day of week" -int 0
