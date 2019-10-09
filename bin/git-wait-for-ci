@@ -3,11 +3,17 @@
 # Loop on CI status until it succeeds.
 hub ci-status ${SHA}
 RET=$?
+STATUS="not checked"
 # Exit code of 2 means pending
 while [ ${RET} -eq 2 ]; do
   sleep 15
   hub ci-status ${SHA}
+  echo "$STATUS"
   RET=$?
 done
 
-say Done
+if [ ${RET} -eq 0 ]; then
+    say "Success"
+else
+    say "Oh no"
+fi

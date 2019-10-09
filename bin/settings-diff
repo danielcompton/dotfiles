@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+# Diffs your system defaults before and after making a change in macOS.
+# Useful for finding the correct settings to save as `defaults write`
+# commands.
+# Original from https://twitter.com/filosottile/status/1016495719665020935
 
 defaults read | pbcopy
 
