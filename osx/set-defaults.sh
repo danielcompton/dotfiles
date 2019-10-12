@@ -92,7 +92,7 @@ defaults write com.apple.mail ConversationViewSortDescending -int 1
 # Archive messages instead of deleting them
 defaults write com.apple.mail SwipeAction -int 1 # 0 is delete, 1 is archive
 # Set e as the Archive key
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" -string "e"
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" -string "@e"
 # Notify only for VIP messages
 defaults write com.apple.mail MailUserNotificationScope -int 2
 # Turn off new message sound
