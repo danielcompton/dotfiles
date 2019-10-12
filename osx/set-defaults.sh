@@ -35,6 +35,10 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# Disable Spotlight Suggestions in Look Up
+# https://twitter.com/craigmod/status/1177445871740305409
+# https://daringfireball.net/linked/2019/10/10/spotlight-suggestions-in-look-up
+defaults write com.apple.lookup.shared LookupSuggestionsDisabled -bool true
 
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
