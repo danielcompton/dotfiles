@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
-
+#
 # Loop on CI status until it succeeds.
-hub ci-status ${SHA}
-RET=$?
-STATUS="not checked"
-# Exit code of 2 means pending
-while [ ${RET} -eq 2 ]; do
-  sleep 15
-  hub ci-status ${SHA}
-  echo "$STATUS"
-  RET=$?
+
+# Emulate a do-while loop
+# https://stackoverflow.com/a/16491478/826486
+while
+    STATUS=$(hub ci-status ${SHA})
+    RET=$?
+    echo $STATUS
+    [[ ${RET} -eq 2 ]]
+do
+    sleep 5
 done
 
 if [ ${RET} -eq 0 ]; then
-    say "Success"
+    say $STATUS
 else
-    say "Oh no"
+    say "Oh no." $STATUS
 fi
