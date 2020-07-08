@@ -24,8 +24,8 @@ echo "> brew upgrade"
 brew upgrade
 
 # Cleanup homebrew
-echo "> brew cask cleanup --outdated"
-brew cask cleanup --outdated
+echo "> brew cleanup"
+brew cleanup
 
 # Install software
 echo "› $ZSH/script/install"
