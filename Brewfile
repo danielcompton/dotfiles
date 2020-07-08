@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-tap 'caskroom/versions' # For alternate cask versions
+tap 'homebrew/cask-versions' # For alternate cask versions
 tap 'homebrew/bundle'
 tap 'railwaycat/homebrew-emacsmacport'
 tap 'getsentry/tools'
@@ -38,7 +37,6 @@ brew 'go'
 brew 'gradle'
 brew 'graphviz'
 brew 'grc'
-brew 'heroku-toolbelt'
 brew 'highlight'
 brew 'httpie'
 brew 'hub'
@@ -85,6 +83,7 @@ brew 'z'
 brew 'zsh'
 
 cask '1password'
+cask 'alfred'
 cask 'atom'
 cask 'appcleaner'
 cask 'atext'
@@ -110,7 +109,6 @@ cask 'intellij-idea'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'java' unless system "/usr/libexec/java_home --failfast"
-cask 'java8'
 # cask 'jce-unlimited-strength-policy'
 cask 'jumpcut'
 # cask 'karabiner'
@@ -159,11 +157,11 @@ mas 'Marked 2', id: 890031187
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pixelmator', id: 407963104
-mas 'Reeder', id: 880001334
+mas 'Reeder', id: 1449412482
 mas 'ScreenFloat', id: 414528154
 #mas 'Slack', id: 803453959
 mas 'Soulver', id: 413965349
 mas 'Stars', id: 926319434
 mas 'Stars', id: 926319434
 mas 'Textual 7', id: 1262957439
-mas 'Xcode', id: 497799835
+mas 'Clocker', id: 1056643111
