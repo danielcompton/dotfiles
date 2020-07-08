@@ -1,3 +1,3 @@
 #!/bin/sh
 
-brew services start emacs
+# brew services start emacs
