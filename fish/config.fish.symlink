@@ -52,3 +52,11 @@ end
 # TODO: https://news.ycombinator.com/item?id=4073727
 test -e {$HOME}/.iterm2_shell_integration.fish
 and source {$HOME}/.iterm2_shell_integration.fish
+
+# I think these might be needed for Charlock Holmes to compile properly?
+# https://github.com/brianmario/charlock_holmes/issues/117#issuecomment-347267575
+#
+# bundle config build.charlock_holmes --with-icu-dir=/usr/local/opt/icu4c
+# bundle install
+set -g fish_user_paths "/usr/local/opt/icu4c/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/icu4c/sbin" $fish_user_paths
