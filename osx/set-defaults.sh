@@ -183,6 +183,10 @@ defaults write co.gitup.mac "GIMapViewController_SkipPushBranchWarning" -int 1
 
 defaults write com.googlecode.iterm2 OnlyWhenMoreTabs -int 0
 
+# iA Writer
+
+defaults write pro.writer.mac "Document Path Extension" -string md
+
 # Kaleidoscope
 
 defaults write com.blackpixel.kaleidoscope KSIgnoreWhitespaceUserDefaultsKey -int 1
