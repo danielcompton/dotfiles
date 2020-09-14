@@ -2,6 +2,17 @@
 #
 # Loop on CI status until it succeeds.
 
+if [ -z ${ARG} ] ; then
+  ARG="HEAD"
+fi
+
+SHA=$(git rev-parse ${ARG})
+
+echo "Waiting for:"
+git show --oneline --no-patch ${SHA}
+
+hub ci-status ${SHA} -v
+
 # Emulate a do-while loop
 # https://stackoverflow.com/a/16491478/826486
 while
@@ -16,5 +27,6 @@ done
 if [ ${RET} -eq 0 ]; then
     say $STATUS
 else
+    hub ci-status ${SHA} -v
     say "Oh no." $STATUS
 fi
