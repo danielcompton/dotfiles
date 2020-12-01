@@ -63,6 +63,7 @@ defaults write -app Safari AutoFillFromAddressBook -int 0
 defaults write -app Safari AutoFillMiscellaneousForms -int 0
 defaults write -app Safari ShowFullURLInSmartSearchField -int 1
 defaults write -app Safari ShowSidebarInTopSites -int 0
+defaults write -app Safari ShowIconsInTabs -int 1
 # Show the URL preview in bottom left
 defaults write -app Safari ShowOverlayStatusBar -int 1
 defaults write com.apple.Safari HomePage -string "about:blank"
