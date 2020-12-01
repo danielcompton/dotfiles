@@ -60,3 +60,7 @@ and source {$HOME}/.iterm2_shell_integration.fish
 # bundle install
 set -g fish_user_paths "/usr/local/opt/icu4c/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/icu4c/sbin" $fish_user_paths
+
+
+# For nodenv, maybe delete if not needed later
+status --is-interactive; and . (nodenv init -|psub)
