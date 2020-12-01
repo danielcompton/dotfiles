@@ -70,3 +70,5 @@
 [diff "clojure"]
       xfuncname = "^(\\(.*)$"
 #      xfuncname = "^(\\((cl-)?def(un|macro|method).*)$"
+[init]
+	defaultBranch = main
