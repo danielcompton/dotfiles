@@ -5,8 +5,9 @@ tap 'homebrew/bundle'
 tap 'railwaycat/homebrew-emacsmacport'
 tap 'getsentry/tools'
 tap 'domt4/autoupdate'
+tap 'homebrew/cask-fonts'
 
-cask 'java' # Java is required for many other tools to be installed.
+brew 'java' # Java is required for many other tools to be installed.
 
 brew 'ack'
 brew 'ansible'
@@ -32,6 +33,7 @@ brew 'fish'
 brew 'fd' # GNU find replacement, used by Projectile
 brew 'gcc'
 brew 'git'
+brew 'gh'
 brew 'gnupg2'
 brew 'go'
 brew 'gradle'
@@ -140,6 +142,12 @@ cask 'yourkit-java-profiler'
 # caskroom/versions
 cask 'google-chrome-canary'
 
+# Fonts
+brew install svn # SVN is a prerequisite for installing some Google fonts
+cask install font-montserrat
+cask install font-lato
+
+
 # mas 'Palua', id: 431494195 # Not on App Store any more?
 #mas 'Irvue', id: 1039633667
 #mas 'QuickCursor', id: 404035899
@@ -168,3 +176,9 @@ mas 'Textual 7', id: 1262957439
 mas 'Clocker', id: 1056643111
 mas 'ToothFairy', id: 1191449274
 mas 'Meeter', id: 1510445899
+mas 'Tot', id: 1491071483
+mas 'Instapaper Save', id: 1481302432
+mas 'Instapaper', id: 288545208
+
+
+
