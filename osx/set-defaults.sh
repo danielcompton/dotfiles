@@ -80,6 +80,8 @@ defaults write com.apple.Safari OpenPrivateWindowWhenNotRestoringSessionAtLaunch
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "WebKitPreferences.developerExtrasEnabled" -bool true
+defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Disable push notification prompts
@@ -240,3 +242,8 @@ defaults write com.karelia.Stars unratedNotificationEnabled -int 0
 # Postgres.app
 
 defaults write com.postgresapp.Postgres2 ClientAppName -string "iTerm"
+
+# Spectacles
+
+defaults write com.knollsoft.Rectangle windowSnapping -int 2
+
