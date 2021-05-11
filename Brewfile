@@ -84,6 +84,9 @@ brew 'yarn'
 brew 'z'
 brew 'zsh'
 
+# https://github.com/RobotsAndPencils/xcodes
+brew 'robotsandpencils/made/xcodes'
+
 cask '1password'
 cask 'alfred'
 cask 'atom'
@@ -179,6 +182,4 @@ mas 'Meeter', id: 1510445899
 mas 'Tot', id: 1491071483
 mas 'Instapaper Save', id: 1481302432
 mas 'Instapaper', id: 288545208
-
-
-
+mas 'Webcam Settings', id: 533696630
