@@ -1,1 +1,1 @@
-# source $HOME/.cargo/env
+set -g -x PATH $HOME/.cargo/bin $PATH
